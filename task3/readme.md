@@ -3,11 +3,7 @@
 
 Date limite de remise du challenge: le 06 février 2021 
 
-### Task 1:
-L'objectif ici est de déployer l'application WordPress sur le cluster mono-noeud Docker Desktop Kubernetes. 
 
----
-  
 ### Task 2:
 L'objectif ici est d'installer Kubernetes **Metrics Server** et de l'exploiter pour visualiser les métriques sur le dashboard UI de Kubernetes, dashboard vu déjà dans le tout premier lab du module Kubernetes. 
 
@@ -98,16 +94,12 @@ kubectl proxy
 Kubectl will make Dashboard available at <http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/>.
 You will then be prompted with this page, to enter the credentials:
 
-<img src="images/dashboard_authentication.png" width="600px" height="280px"/>
-
 Dashboard only supports logging in with a Bearer Token. To get the token type in the following command:
 
 ```shell
 kubectl -n kubernetes-dashboard describe secret default
 ```
 The dashboard UI is then displayed 
-
-<img src="images/dashboard_metrics.png" width="840px" height="520px"/>
 
 
 # Task 3:
